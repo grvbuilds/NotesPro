@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI',sans-serif;
+}
+
+.tabs {
+    text-align: center;
+    margin-top: 20px;
+    overflow: auto; /* Add overflow property */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.popup {
+    width: 320px;
+    border-radius: 10px; /* Add border-radius for rounding */
+    overflow: hidden;
+}
+
+
+
+/* CSS for the bottom menu section */
+/*
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+}
+*/
+
+
+.tab-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent; /* Remove the background color */
+    color: #333; /* Default text color */
+    margin: 5px;
+}
+
+
+
+.tab-btn.active {
+    background-color: #007bff; /* Color of the selected tab */
+    color: #fff; /* Text color when selected */
+}
+
+.tab-content {
+    width: 300px; /* Adjust as needed */
+    max-height: 500px; /* Maximum height */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Add a scrollbar if content overflows */
+}
+
+.note-textarea {
+    width: 100%; /* Adjust as needed, subtracting padding */
+    height: 400px; /* Allow the textarea to expand as needed */
+    padding: 10px;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    font-size: 16px; /* Adjust as needed */
+    resize: none; /* Disable manual resizing */
+    box-sizing: border-box; /* Include padding within the specified width */
+}
+
+/* Add this CSS to style the scrollbar */
+/* You can customize the colors and other properties as needed */
+
+/* For Webkit browsers (like Chrome) */
+/* Track */
+::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #dbdbdb; /* Set the color of the scrollbar handle */
+    border-radius: 4px; /* Set the border radius to make it sleek */
+}
+
+/* Handle on hover*/
+::-webkit-scrollbar-thumb:hover {
+    background-color: #dbdbdb; /* Change the color on hover */
+}
